@@ -19,7 +19,7 @@ app.all('*', function (req, res, next) {
         // CORS Preflight
         res.send();
     } else {
-        var targetURL = req.header('google.com');
+        var targetURL = req.header('www.yandex.ru');
         if (!targetURL) {
             res.send(500, { error: 'There is no Target-Endpoint header in the request' });
             return;
